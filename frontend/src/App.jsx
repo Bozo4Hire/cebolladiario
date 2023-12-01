@@ -12,7 +12,7 @@ import Dashboard from './pages/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.baseURL = 'https://cebolladiario-api.onrender.com';
 axios.defaults.withCredentials = true;
 
 function App() {
