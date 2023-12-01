@@ -7,7 +7,7 @@ const { test, registerUser, loginUser, getProfile } = require('../controllers/au
 router.use(
     cors({
         credentials: true,
-        origin: 'https://cebolladiario-site.onrender.com'
+        origin: 'https://bozo4hire.github.io/cebolla_site/'
     })
 )
 

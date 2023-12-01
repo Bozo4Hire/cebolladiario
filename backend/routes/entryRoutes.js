@@ -11,7 +11,7 @@ const { test,
 router.use(
     cors({
         credentials: true,
-        origin: 'https://cebolladiario-site.onrender.com'
+        origin: 'https://bozo4hire.github.io/cebolla_site/'
     })
 )
 
