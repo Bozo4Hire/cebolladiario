@@ -66,16 +66,12 @@ const loginUser = async (req, res) => {
         }
 
         // Verifica si las contraseñas coinciden
-        const match = await comparePassword(password, user.password)
+        const match = password === user.password;
 
         if (match) {
-            /* jwt.sign({ email: user.email, id: user._id, name: user.name }, process.env.JWT_SECRET, {}, (err, token) => {
+            jwt.sign({ email: user.email, id: user._id, name: user.name }, process.env.JWT_SECRET, {}, (err, token) => {
                 res.cookie('token', token).json(user)
-            }) */
-            return res.json({
-                error: "Las contraseñas coninciden"
             })
-            
         }
         if (!match) {
             return res.json({
