@@ -10,8 +10,8 @@ const { test,
 //middleware
 router.use(
     cors({
-        credentials: false,
-        origin: 'https://bozo4hire.github.io/cebolla_site/'
+        credentials: true,
+        origin: 'https://main--superlative-hummingbird-ea8dbc.netlify.app'
     })
 )
 

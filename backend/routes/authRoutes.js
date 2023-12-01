@@ -6,8 +6,8 @@ const { test, registerUser, loginUser, getProfile } = require('../controllers/au
 //middleware
 router.use(
     cors({
-        credentials: false,
-        origin: 'https://bozo4hire.github.io/cebolla_site/'
+        credentials: true,
+        origin: 'https://main--superlative-hummingbird-ea8dbc.netlify.app'
     })
 )
 
