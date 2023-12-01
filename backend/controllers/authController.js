@@ -1,5 +1,4 @@
 const User = require('../models/user');
-const { hashPassword, comparePassword } = require('../helpers/auth');
 const jwt = require('jsonwebtoken');
 
 const test = (req, res) => {
@@ -33,13 +32,11 @@ const registerUser = async (req, res) => {
             })
         }
 
-        // Encripta la contraseña
-        const hashedPassword = await hashPassword(password)
 
         const user = await User.create({
             name,
             email,
-            password: hashedPassword
+            password
         })
 
         // Verifica si se ingresó un correo electrónico
