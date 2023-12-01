@@ -10,7 +10,7 @@ const { test,
 //middleware
 router.use(
     cors({
-        credentials: true,
+        credentials: false,
         origin: 'https://bozo4hire.github.io/cebolla_site/'
     })
 )

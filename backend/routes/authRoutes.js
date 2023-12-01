@@ -6,7 +6,7 @@ const { test, registerUser, loginUser, getProfile } = require('../controllers/au
 //middleware
 router.use(
     cors({
-        credentials: true,
+        credentials: false,
         origin: 'https://bozo4hire.github.io/cebolla_site/'
     })
 )
